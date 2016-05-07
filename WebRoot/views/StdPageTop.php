@@ -1,5 +1,13 @@
-  <body>
-    <header>
-      <a href='/tests'>Home</a>
-      <a href='?controller=posts&action=index'>Posts</a>
-    </header>
+<body>
+
+	<!-- Menu Bar -->
+	<header>
+		<nav class="MainMenu">
+			<ul class="MainMenuItems">
+				<li>Home</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- End Menu Bar -->
+	<div id="gradiantToMenu">
+	</div>

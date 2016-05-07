@@ -1,3 +1,5 @@
-<p>Hello there <?php echo $first_name . ' ' . $last_name; ?>!<p>
+<p>Hello</p>
 
-<p>You successfully landed on the home page. Congrats!</p>
+<h2>Multi User Claw</h2><br><br>
+
+<p><ul><li id="StartGame">Start new Game</li><li id="JoinGame">Join Game</li></ul></p>

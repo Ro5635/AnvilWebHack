@@ -1,15 +1,14 @@
 <?php
   	require_once('../Connection.php');
 
-  	 
+  	
+  	  // $db = Db::getInstance();
+     //  $req = $db->query('Select * from TestTable');
 
-  	  $db = Db::getInstance();
-      $req = $db->query('Select * from TestTable');
-
-      // we create a list of Post objects from the database results
-      foreach($req->fetchAll() as $line) {
-        echo " thing: " . $line['number'];
-      }
+     //  // we create a list of Post objects from the database results
+     //  foreach($req->fetchAll() as $line) {
+     //    echo " thing: " . $line['Number'];
+     //  }
 
 	//Thsi should be changed to explode the URL and pull the neccasaray variables as array inde
 	$URL =  $_SERVER['REQUEST_URI'];
@@ -27,10 +26,11 @@
 	$action = $actionAndGETVars[0];
 
 	//Check that there was at least a controller and action defined:
-	if(!count($requestSegments) > 2){
+	if(!(count($requestSegments) > 2)){
 		//A minimum of a controller and an action is not defined so set to home page:
 		$controller = 'pages';
     	$action     = 'home';
+
 	}
 
   	require_once('views/layout.php');
