@@ -1,5 +1,15 @@
 <?php
- // 	require_once('../Connection.php');
+  	require_once('../Connection.php');
+
+  	 
+
+  	  $db = Db::getInstance();
+      $req = $db->query('Select * from TestTable');
+
+      // we create a list of Post objects from the database results
+      foreach($req->fetchAll() as $line) {
+        echo " thing: " . $line['number'];
+      }
 
 	//Thsi should be changed to explode the URL and pull the neccasaray variables as array inde
 	$URL =  $_SERVER['REQUEST_URI'];
