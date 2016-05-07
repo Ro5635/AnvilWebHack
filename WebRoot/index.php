@@ -1,5 +1,5 @@
 <?php
-  	require_once('../Connection.php');
+ // 	require_once('../Connection.php');
 
 	//Thsi should be changed to explode the URL and pull the neccasaray variables as array inde
 	$URL =  $_SERVER['REQUEST_URI'];
