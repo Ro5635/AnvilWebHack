@@ -35,7 +35,5 @@ Name: <input type="text" name="NameOfNewGame" value=""><br>
 
 
 
-
-
 </span>
 
