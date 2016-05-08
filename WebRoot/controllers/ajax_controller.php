@@ -33,7 +33,7 @@
     	$values = $req->fetchAll();
     	$currantValue = $values[0]['ZValue'];
     
-    	$NewValue = $currantValue + 1;
+    	$NewValue = $currantValue + 1/4;
 
     	$req = $db->prepare('UPDATE GamePlay SET ZValue = :NewValue');
     	$req->execute(array(':NewValue' => $NewValue));	
@@ -52,7 +52,7 @@
     	$values = $req->fetchAll();
     	$currantValue = $values[0]['ZValue'];
     
-    	$NewValue = $currantValue - 1;
+    	$NewValue = $currantValue - 1/4;
 
     	$stmt = $db->prepare('UPDATE GamePlay SET ZValue = :NewValue');
     	$stmt->execute(array(':NewValue' => $NewValue ));	
