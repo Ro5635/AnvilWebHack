@@ -1,4 +1,4 @@
-<html lang = "en">
+<html>
 	<head>
 		<title>
 			Claw Game
@@ -276,7 +276,7 @@
 				            data: $(this).serialize(),
 				            dataType: 'json',
 				            success: function (data) {
-				            	var clawRotation = parseInt(data) *(Math.PI/180);// first set the value
+				            	 clawRotation = parseInt(data) *(Math.PI/180);// first set the value
 				                  //  $clawRotation = $.trim(data) *(Math.PI/180);// first set the value
 				            },
 				            complete: function (data) {

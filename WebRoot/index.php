@@ -25,6 +25,12 @@
 	//Action at index position 0:
 	$action = $actionAndGETVars[0];
 
+	//Ensure that there is no extension, if there is strip it off:
+	$actionRemoveExtention = explode('.', $action);
+
+	//Get the first block:
+	$action = $actionRemoveExtention[0];
+
 	//Check that there was at least a controller and action defined:
 	if(!(count($requestSegments) > 2)){
 		//A minimum of a controller and an action is not defined so set to home page:
