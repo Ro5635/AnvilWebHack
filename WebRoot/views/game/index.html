@@ -276,7 +276,8 @@
 				            data: $(this).serialize(),
 				            dataType: 'json',
 				            success: function (data) {
-				                    $clawRotation = data *(Math.PI/180);// first set the value
+				            	var clawRotation = parseInt(data) *(Math.PI/180);// first set the value
+				                  //  $clawRotation = $.trim(data) *(Math.PI/180);// first set the value
 				            },
 				            complete: function (data) {
 				                    // Schedule the next
