@@ -1,5 +1,5 @@
 <?php
-  class PostsController {
+  class GameController {
     public function play() {
       
       require_once('views/game/playgame.php');

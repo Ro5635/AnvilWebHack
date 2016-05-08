@@ -33,5 +33,9 @@
 
 	}
 
+	if($controller == 'ajax'  || $controller == 'game'){
+		require_once('routes.php'); 
+	}
+
   	require_once('views/layout.php');
 ?>

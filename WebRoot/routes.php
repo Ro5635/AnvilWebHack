@@ -1,7 +1,7 @@
 <?php
 
   // we're adding an entry for the new controller and its actions
-  $controllers = array('pages' => ['home', 'error'], 'posts' => ['index', 'show'], 'footer' => ['std', 'error']);
+  $controllers = array('pages' => ['home', 'error'], 'posts' => ['index', 'show'], 'footer' => ['std', 'error'], 'ajax' =>['getzvalue', 'inczvalue' , 'deczvalue'] , 'game' =>['play']);
 
   if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {
@@ -30,6 +30,14 @@
       break;
       case 'footer':
        $controller = new FooterController();
+       break;
+
+       case 'ajax':
+         $controller = new AJAXController();
+       break;
+
+       case 'game':
+          $controller = new GameController();
        break;
     }
 
