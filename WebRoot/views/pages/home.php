@@ -7,7 +7,7 @@
 
 <p><ul><span class="StartGame"><li class="clickable">Start new Game</li></span><li class="clickable" id="JoinGame">Join Game</li></ul></p>
 
-<a href="http://robotclaw.ro5635.co.uk/game/play"><h3>GO TO GAME</h3></a>
+<a class="button clickable" href="http://robotclaw.ro5635.co.uk/game/play"><h3>GO TO GAME</h3></a>
 
 <span class="hidden  StartGameForm Form">
 <br>
