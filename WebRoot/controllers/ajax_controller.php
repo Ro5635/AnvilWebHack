@@ -61,6 +61,19 @@
 		die;
     }
 
+    //Sets teh value of Z.
+        public function setzvalue() {
+        $Zvalue = $_GET['zvalue'];
+
+    	$db = Db::getInstance();
+
+    	$stmt = $db->prepare('UPDATE GamePlay SET ZValue = :Zvalue');
+    	$stmt->execute(array(":Zvalue" => $Zvalue));
+
+		die();
+    }
+
+
 
   }
 ?>
