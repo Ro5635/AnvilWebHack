@@ -34,15 +34,7 @@ Name: <input type="text" name="NameOfNewGame" value=""><br>
 </span>
 
 
-  <script>
-  $(function() {
-    $( "#slider" ).slider();
-  });
-  </script>
-</head>
-<body>
- 
-<div id="slider"></div>
+
 
 
 </span>
